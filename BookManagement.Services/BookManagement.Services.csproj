@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookManagement.BusinessObject\BookManagement.BusinessObject.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\BookManagement.Repositories\BookManagement.Repositories.csproj" />
+    <ProjectReference Include="..\BookManagement.Utils\BookManagement.Utils.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
